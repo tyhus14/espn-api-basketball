@@ -7,6 +7,30 @@ var TeamCollection = Backbone.Collection.extend({
 
 	parse: function(response) {
     	return response.sports[0].leagues[0].teams;
+  	},
+
+  	initialize: function(){
+  		this.on('add', function(item){
+        	new TeamView({model: item})
+    	})
+  	}
+
+});
+
+var HeadlineModel = Backbone.Model.extend({});
+
+var HeadlineCollection = Backbone.Collection.extend({
+	model: HeadlineModel,
+
+	parse: function(response){
+		return response.headlines
+	},
+
+	initialize: function(){
+  		this.on('add', function(item){
+        	new HeadlineView({model: item})
+    	})
   	}
 
 })
+

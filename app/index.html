@@ -30,14 +30,16 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
+                    
                     <li><a href="#teams">Teams</a></li>
-                    <li><a href="#">Contact</a></li>
+                    
                 </ul>
                 <h3 class="text-muted">api backbone</h3>
             </div>
 
-            <div class="jumbotron"></div>
+            <!-- <div class="jumbotron"></div> -->
+            <div class="team-list col-md-4"></div>
+            <div class="featured-list col-md-8"> </div>
 
             <div class="row marketing">
                 <div class="col-lg-6">
@@ -51,7 +53,11 @@
         </div>
 
         <script type="text/template" id='team-template'>
-            <a href="#team/<%= name %>"><p><%= this.model.get('name') %></p></a>
+            <a href="#teams/<%= this.model.id %>"><p><%= this.model.get('location') %> <%= this.model.get('name') %></p></a>
+        </script>
+
+        <script type="text/template" id='headline-template'>
+            <p><%= this.model.get('headline') %></p>
         </script>
 
         <!-- build:js scripts/vendor.js -->
@@ -90,6 +96,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/model-collection.js"></script>
         <script src="scripts/team-view.js"></script>
+        <script src="scripts/featured-view.js"></script>
         <script src="scripts/router.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->

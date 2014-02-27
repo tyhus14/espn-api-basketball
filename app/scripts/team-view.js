@@ -6,7 +6,7 @@ var TeamView = Backbone.View.extend({
 
 
 	initialize: function(){
-		$('.jumbotron').append(this.el);
+		$('.team-list').append(this.el);
 		this.render()
 	},
 
