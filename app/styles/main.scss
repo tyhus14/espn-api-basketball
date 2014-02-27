@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -82,6 +82,7 @@ body {
     /* Space out the masthead */
     .header {
         margin-bottom: 30px;
+        background: black;
     }
     
     /* Remove the bottom border on the jumbotron for visual effect */

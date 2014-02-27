@@ -15,10 +15,10 @@ var MainRouter = Backbone.Router.extend({
 
   featuredTeam: function(id){
     console.log('hi')
-    if (id) {
+    // if (id) {
       // this.items.url = "http://api.espn.com/v1/sports/basketball/nba/teams/"+ id +"/news?&apikey=swz92eu339qnv7tsd8ypqpxq"
       this.headlines.url = "http://api.espn.com/v1/sports/basketball/nba/teams/"+ id +"/news?&apikey=swz92eu339qnv7tsd8ypqpxq"
-    }
+    // }
 
     this.headlines.fetch()
 
