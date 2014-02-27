@@ -1,6 +1,6 @@
 var TeamView = Backbone.View.extend({
 
-	className: 'hat-item-js',
+	className: 'team-item-js',
 
 	teamTemplate: _.template($('#team-template').text()),
 

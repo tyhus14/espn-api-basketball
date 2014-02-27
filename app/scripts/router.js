@@ -1,16 +1,16 @@
 var MainRouter = Backbone.Router.extend({
   routes: {
-    "teams" : "showTeams",
-    'teams/:id' : 'featuredTeam'
+    // "teams" : "showTeams",
+    'team/:id' : 'featuredTeam'
   },
  
   initialize: function(){
     this.items = new TeamCollection();
     this.headlines = new HeadlineCollection()
+    this.items.fetch();
   },
  
   showTeams: function(){
-    this.items.fetch();
   },
 
   featuredTeam: function(id){

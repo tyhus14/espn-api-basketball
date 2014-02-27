@@ -30,7 +30,7 @@
         <div class="header">
             <div class="container">
                 <ul class="nav nav-pills pull-right">
-                    <li><a href="#teams">Teams</a></li>
+                   
                 </ul>
                 <h3 class="text-muted">10 NBA Headlines for Each Team</h3>
             </div>
@@ -54,11 +54,14 @@
         </div>
 
         <script type="text/template" id='team-template'>
-            <a href="#teams/<%= this.model.id %>"><p><%= this.model.get('location') %> <%= this.model.get('name') %></p></a>
+            <a href="#team/<%= this.model.id %>"><p><%= this.model.get('location') %> <%= this.model.get('name') %></p></a>
         </script>
 
         <script type="text/template" id='headline-template'>
-            <p><%= this.model.get('headline') %></p>
+            <p><%= headline %></p>
+            <% if (typeof(images[0]) != 'undefined') { %>
+            <img src="<%= images[0].url%>">
+            <% } %>
         </script>
 
         <!-- build:js scripts/vendor.js -->
