@@ -6,7 +6,7 @@ var HeadlineView = Backbone.View.extend({
 
 
 	initialize: function(){
-		console.log('featuer view model is: ', this.model)
+		// console.log('featuer view model is: ', this.model)
 		$('.featured-list').append(this.el);
 		this.render()
 	},
@@ -14,6 +14,8 @@ var HeadlineView = Backbone.View.extend({
 	render: function(){
 		var featuredRenderedTemplate = this.featuredTemplate(this.model.attributes);
 		this.$el.html(featuredRenderedTemplate);
+		// document.body.style.backgroundColor = "#" + color;
 	}
-   
 })
+
+

@@ -1,3 +1,6 @@
+
+
+
 var TeamView = Backbone.View.extend({
 
 	className: 'team-item-js',
@@ -11,8 +14,12 @@ var TeamView = Backbone.View.extend({
 	},
 
 	render: function(){
+		// document.getElementById(body).style.backgroundColor = '<%= color %>';
 		var teamRenderedTemplate = this.teamTemplate(this.model.attributes);
 		this.$el.html(teamRenderedTemplate);
+
+
+		// $('body').css('background-color: #<%= color %>;');
 	}
    
 })

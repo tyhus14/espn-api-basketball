@@ -11,8 +11,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
+    background-color: black;
     padding-top: 0px;
     padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -25,14 +27,19 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    height: 85px;
+    z-index: 1;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
+        font-size: 30px;
+        color: black;
         margin-top: 0;
         margin-bottom: 0;
-        line-height: 40px;
+        line-height: 75px;
         padding-bottom: 19px;
+        width: 100px;
+        display: inline;
     }
 }
 
@@ -81,9 +88,16 @@ body {
 
     /* Space out the masthead */
     .header {
-        margin-bottom: 30px;
-        background: black;
-    }
+        margin-bottom: -1px;
+        background: -moz-linear-gradient(top, rgba(255,110,0,1) 0%, rgba(251,157,35,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,110,0,1)), color-stop(100%,rgba(251,157,35,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e00', endColorstr='#00fb9d23',GradientType=0 ); /* IE6-9 */
+
+}
     
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
@@ -92,9 +106,54 @@ body {
 }
 
 .headlines {
-    font-size: 18px;
-    img {
-        height: 100px;
-    }
+    font-size: 12px;
+    color: #818284;
     margin-bottom: 30px;
+    img {
+        height: 200px;
+    }
 }
+
+.team-item-js {
+    background: rgba(0, 0, 0, 0.76);
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(237, 107, 0);
+
+        p {
+            margin: 0 0 0px;
+            font-weight: normal;
+        }
+        a {
+            color: #B8BCC2;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: rgba(45, 45, 45, .85);
+            color: black;
+        }
+}
+
+.featured-list {
+    width: 385px;
+    margin-left: -15px;
+}
+
+.text-muted {
+    padding-left: 15px;
+    color: #FFF8F8;
+}
+
+.img-responsive {
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    margin-top: -20px;
+    height: 60px;
+    margin-left: 15px;
+}
+

@@ -1,7 +1,6 @@
 var MainRouter = Backbone.Router.extend({
   routes: {
-    // "teams" : "showTeams",
-    'team/:id' : 'featuredTeam'
+    ':id' : 'featuredTeam'
   },
  
   initialize: function(){
@@ -10,9 +9,6 @@ var MainRouter = Backbone.Router.extend({
     this.items.fetch();
   },
  
-  showTeams: function(){
-  },
-
   featuredTeam: function(id){
     console.log('hi')
     // if (id) {
@@ -26,6 +22,8 @@ var MainRouter = Backbone.Router.extend({
 
     console.log('id is: ', id)
     // new FeaturedView({model: )
+
+
   }
 
 

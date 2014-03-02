@@ -6,7 +6,9 @@ var TeamCollection = Backbone.Collection.extend({
 	url: 'http://api.espn.com/v1/sports/basketball/nba/teams?enable=roster&apikey=swz92eu339qnv7tsd8ypqpxq',
 
 	parse: function(response) {
+		color = response.sports[0].leagues[0].teams[0].color;
     	return response.sports[0].leagues[0].teams;
+  	
   	},
 
   	initialize: function(){
@@ -31,6 +33,5 @@ var HeadlineCollection = Backbone.Collection.extend({
         	new HeadlineView({model: item})
     	})
   	}
-
 })
 
