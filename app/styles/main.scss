@@ -27,7 +27,7 @@ body {
 
 /* Custom page header */
 .header {
-    height: 85px;
+    height: 70px;
     z-index: 1;
 
     /* Make the masthead heading the same height as the navigation */
@@ -87,17 +87,7 @@ body {
     }
 
     /* Space out the masthead */
-    .header {
-        margin-bottom: -1px;
-        background: -moz-linear-gradient(top, rgba(255,110,0,1) 0%, rgba(251,157,35,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,110,0,1)), color-stop(100%,rgba(251,157,35,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(255,110,0,1) 0%,rgba(251,157,35,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e00', endColorstr='#00fb9d23',GradientType=0 ); /* IE6-9 */
-
-}
+ 
     
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
@@ -155,5 +145,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6e00', end
     margin-top: -20px;
     height: 60px;
     margin-left: 15px;
+}
+
+.header {
+    background: rgb(228, 134, 80);
 }
 
