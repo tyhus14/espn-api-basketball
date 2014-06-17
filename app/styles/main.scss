@@ -111,7 +111,7 @@ body {
     img {
         width: 400px;
         @media only screen and (max-width : 400px) {
-            width: 200px;
+            width: 100%;
     }
       -webkit-transition: all .5s ease;
         
