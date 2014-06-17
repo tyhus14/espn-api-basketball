@@ -143,6 +143,10 @@ body {
 .img-responsive {
     position: absolute;
     z-index: -1;
+    @media only screen and (max-width : 400px) {
+            width: 100%;
+    }
+      -webkit-transition: all .5s ease;
 }
 
 .logo {
