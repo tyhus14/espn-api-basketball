@@ -147,6 +147,9 @@ body {
 .featured-list {
     width: 385px;
     margin-left: -15px;
+      @media only screen and (max-width : 400px) {
+            margin-left: 0px;
+    }
 }
 
 .text-muted {
