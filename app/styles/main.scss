@@ -29,6 +29,10 @@ body {
 .header {
     height: 70px;
     z-index: 1;
+    @media only screen and (max-width : 400px) {
+            width: 100%;
+    }
+      -webkit-transition: all .5s ease;
 
     /* Make the masthead heading the same height as the navigation */
     h3 {
@@ -40,6 +44,11 @@ body {
         padding-bottom: 19px;
         width: 100px;
         display: inline;
+        @media only screen and (max-width : 400px) {
+            font-size: 20px;
+        
+    }
+      -webkit-transition: all .5s ease;
     }
 }
 
@@ -101,6 +110,10 @@ body {
     margin-bottom: 30px;
     img {
         height: 200px;
+        @media only screen and (max-width : 400px) {
+            width: 100%;
+    }
+      -webkit-transition: all .5s ease;
     }
 }
 
@@ -153,6 +166,10 @@ body {
     margin-top: -20px;
     height: 60px;
     margin-left: 15px;
+    @media only screen and (max-width : 400px) {
+            height: 20px;
+    }
+      -webkit-transition: all .5s ease;
 }
 
 .header {
